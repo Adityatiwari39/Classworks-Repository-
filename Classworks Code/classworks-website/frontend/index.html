@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClassWorks - Empowering Education</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#our-courses">Our Courses</a>
+    <a href="#our-software">Our Software</a>
+    <a href="#our-program">Our Program</a>
+    <a href="#about">About Us</a>
+  </nav>
+
+  <section id="home">
+    <h1>Welcome to ClassWorks</h1>
+    <img src="images/banner.jpg" alt="ClassWorks Banner" class="banner" />
+    <div class="card">
+      <h2>Online Courses</h2>
+      <p>Expert-led courses for CBSE, ICSE, UP Board, and JEE, NEET.</p>
+    </div>
+    <div class="card">
+      <h2>Smart School Software</h2>
+      <p>Manage student performance, results, and attendance easily.</p>
+    </div>
+    <div class="card">
+      <h2>Study Materials</h2>
+      <p>High-quality content at affordable prices.</p>
+    </div>
+    <div class="card">
+      <h2>Upcoming Events</h2>
+      <p>Student workshops and board preparation bootcamps.</p>
+    </div>
+  </section>
+
+  <section id="our-courses">
+    <h1>Our Courses</h1>
+    <div class="card">
+      <h2>Board Courses</h2>
+      <p>Courses for CBSE, ICSE, UP Board, and state boards.</p>
+    </div>
+    <div class="card">
+      <h2>Competitive Exams</h2>
+      <p>JEE Mains, JEE Advanced, NEET preparation programs.</p>
+    </div>
+  </section>
+
+  <section id="our-software">
+    <h1>Our Software</h1>
+    <div class="card">
+      <h2>School Management</h2>
+      <p>Includes Admin and Teacher Panels.</p>
+    </div>
+  </section>
+
+  <section id="our-program">
+    <h1>Our Program</h1>
+    <p>Live sessions, tests, and personalized learning.</p>
+  </section>
+
+  <section id="about">
+    <h1>About ClassWorks</h1>
+    <p>We simplify school operations and pioneered online result systems.</p>
+  </section>
+
+  <section id="registration">
+    <h1>Register</h1>
+    <div class="card">
+      <h2>Student</h2>
+      <form action="/register-student" method="post">
+        <input name="studentName" placeholder="Name" required><br>
+        <input name="studentEmail" placeholder="Email" type="email" required><br>
+        <input name="studentBoard" placeholder="Board" required><br>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+    <div class="card">
+      <h2>School</h2>
+      <form action="/register-school" method="post">
+        <input name="schoolName" placeholder="School Name" required><br>
+        <input name="schoolEmail" placeholder="Email" type="email" required><br>
+        <input name="schoolCity" placeholder="City" required><br>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>&copy; 2025 ClassWorks. All rights reserved.</footer>
+</body>
+</html>

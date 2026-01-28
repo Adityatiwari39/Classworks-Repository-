@@ -1,0 +1,732 @@
+
+<div class="jobs-container">
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <div class="filter-header">
+            <h3>🔍 Filter Jobs by Category</h3>
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All Jobs (20)</button>
+            <button class="filter-btn" data-category="development">Development</button>
+            <button class="filter-btn" data-category="backend">Backend</button>
+            <button class="filter-btn" data-category="frontend">Frontend</button>
+            <button class="filter-btn" data-category="support">Support</button>
+            <button class="filter-btn" data-category="engineering">Engineering</button>
+            <button class="filter-btn" data-category="design">Design</button>
+            <button class="filter-btn" data-category="management">Management</button>
+            <button class="filter-btn" data-category="qa">QA/Testing</button>
+            <button class="filter-btn" data-category="consulting">Consulting</button>
+        </div>
+    </div>
+
+    <div class="job-cards">
+        <!-- Job 1 - Oracle -->
+        <div class="job-card card-red" data-category="support">
+            <div class="job-badge">Oracle</div>
+            <h3 class="job-title">Systems Analyst 1-Support</h3>
+            <div class="job-details">
+                <span class="job-type">🛠️ Support</span>
+                <span class="job-location">📍 Bengaluru</span>
+            </div>
+            <a href="https://eeho.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/jobsearch/job/319150/?utm_medium=jobshare&utm_source=External+Job+Share" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 2 - Valeo -->
+        <div class="job-card card-blue" data-category="management">
+            <div class="job-badge">Valeo</div>
+            <h3 class="job-title">Project Manager</h3>
+            <div class="job-details">
+                <span class="job-type">💼 Full Time</span>
+                <span class="job-location">📍 Chennai</span>
+            </div>
+            <a href="https://valeo.wd3.myworkdayjobs.com/en-US/valeo_jobs/job/Project-Manager-P1_REQ2026068570?locationCountry=c4f78be1a8f14da0ab49ce1162348a5e" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 3 - Mygate -->
+        <div class="job-card card-pink" data-category="design">
+            <div class="job-badge">Mygate</div>
+            <h3 class="job-title">Associate Graphic Designer</h3>
+            <div class="job-details">
+                <span class="job-type">🎨 Design</span>
+                <span class="job-location">📍 Bengaluru</span>
+            </div>
+            <a href="https://www.linkedin.com/jobs/view/4330661563/" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 4 - Smartsheet -->
+        <div class="job-card card-purple" data-category="development">
+            <div class="job-badge">Smartsheet</div>
+            <h3 class="job-title">Software Engineer</h3>
+            <div class="job-details">
+                <span class="job-type">💻 Hybrid</span>
+                <span class="job-location">📍 Bangalore</span>
+            </div>
+            <a href="https://job-boards.greenhouse.io/smartsheet/jobs/7504377" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 5 - Zoho -->
+        <div class="job-card card-orange" data-category="development">
+            <div class="job-badge hot-badge">Zoho</div>
+            <h3 class="job-title">Software Developer</h3>
+            <div class="job-details">
+                <span class="job-type">💻 Development</span>
+                <span class="job-location">📍 India</span>
+            </div>
+            <a href="https://careers.zohocorp.com/forms/47d20eb0b4ccd9b5e0bf37e801d1c8ea84b055442a7e9da2a1d15fb1d63a71474cbe0ddd07fd0f7a753ee513a4bcaf90" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 6 - IBM -->
+        <div class="job-card card-cyan" data-category="engineering">
+            <div class="job-badge">IBM</div>
+            <h3 class="job-title">Associate System Engineer</h3>
+            <div class="job-details">
+                <span class="job-type">💼 Full-time</span>
+                <span class="job-location">📍 Across India</span>
+            </div>
+            <a href="https://whatsapp.com/channel/0029Va4nGKdBadmZMxhUno08/4669" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 7 - PwC -->
+        <div class="job-card card-green" data-category="backend development">
+            <div class="job-badge">PwC</div>
+            <h3 class="job-title">Associate Dot Net Developer</h3>
+            <div class="job-details">
+                <span class="job-type">⚡ .NET</span>
+                <span class="job-location">📍 Kolkata</span>
+            </div>
+            <a href="https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers/job/Kolkata-DN-57/IN-Senior-Associate-Scala-D-A-Advisory--Kolkata_641611WD-1" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 8 - Unisys -->
+        <div class="job-card card-teal" data-category="engineering">
+            <div class="job-badge">Unisys</div>
+            <h3 class="job-title">Associate Engineer - Azure Cloud</h3>
+            <div class="job-details">
+                <span class="job-type">☁️ Cloud</span>
+                <span class="job-location">📍 Bangalore</span>
+            </div>
+            <a href="https://unisys.wd5.myworkdayjobs.com/External/job/Bangalore-KA-India/Associate-Engineer---Azure-Cloud_REQ569144" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 9 - S&P Global -->
+        <div class="job-card card-indigo" data-category="qa development">
+            <div class="job-badge">S&P Global</div>
+            <h3 class="job-title">Software Development Engineer - SDET</h3>
+            <div class="job-details">
+                <span class="job-type">🔧 Testing</span>
+                <span class="job-location">📍 Hyderabad</span>
+            </div>
+            <a href="https://careers.spglobal.com/jobs/323093?lang=en-us" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 10 - GE HealthCare -->
+        <div class="job-card card-violet" data-category="engineering">
+            <div class="job-badge hot-badge">GE HealthCare</div>
+            <h3 class="job-title">Graduate Engineer Trainee</h3>
+            <div class="job-details">
+                <span class="job-type">🎓 Trainee</span>
+                <span class="job-location">📍 Bengaluru</span>
+            </div>
+            <a href="https://careers.gehealthcare.com/global/en/job/GEVGHLGLOBALR4034511EXTERNALENGLOBAL/Graduate-Engineer-Trainee" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 11 - Plivo -->
+        <div class="job-card card-sky" data-category="development">
+            <div class="job-badge">Plivo</div>
+            <h3 class="job-title">Software Development Engineer</h3>
+            <div class="job-details">
+                <span class="job-type">💻 SDE</span>
+                <span class="job-location">📍 Bangalore</span>
+            </div>
+            <a href="https://jobs.lever.co/plivo/6adc06c1-49cc-4981-b712-59815bc6c9c4/apply?lever-source=LinkedIn" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 12 - Barclays -->
+        <div class="job-card card-mint" data-category="frontend backend development">
+            <div class="job-badge">Barclays</div>
+            <h3 class="job-title">Full Stack Developer</h3>
+            <div class="job-details">
+                <span class="job-type">🌐 Full Stack</span>
+                <span class="job-location">📍 Pune</span>
+            </div>
+            <a href="https://search.jobs.barclays/job/-/-/13015/90586325376?src=JB-12860" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 13 - Optum -->
+        <div class="job-card card-gold" data-category="development">
+            <div class="job-badge">Optum</div>
+            <h3 class="job-title">Associate Software Engineer II</h3>
+            <div class="job-details">
+                <span class="job-type">💰 9-11.8 LPA</span>
+                <span class="job-location">📍 India</span>
+            </div>
+            <a href="https://careers.unitedhealthgroup.com/job-search-results/" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 14 - Meesho -->
+        <div class="job-card card-coral" data-category="development">
+            <div class="job-badge hot-badge">Meesho</div>
+            <h3 class="job-title">Software Security Engineer</h3>
+            <div class="job-details">
+                <span class="job-type">🔒 Security</span>
+                <span class="job-location">📍 Bangalore</span>
+            </div>
+            <a href="https://www.meesho.io/jobs/software-security-engineer?id=9745367f-be4e-447f-b81c-af724a4a29c7" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 15 - Syniverse -->
+        <div class="job-card card-lavender" data-category="engineering">
+            <div class="job-badge">Syniverse</div>
+            <h3 class="job-title">Graduate Apprentice Trainee</h3>
+            <div class="job-details">
+                <span class="job-type">🎓 Graduate</span>
+                <span class="job-location">📍 Bangalore</span>
+            </div>
+            <a href="https://syniverse.wd1.myworkdayjobs.com/SyniverseCareers/job/India-Bangalore/Graduate-Apprentice-Trainee_R0007238-1" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 16 - Caterpillar -->
+        <div class="job-card card-royal" data-category="support">
+            <div class="job-badge">Caterpillar</div>
+            <h3 class="job-title">Digital Tech Support Analyst</h3>
+            <div class="job-details">
+                <span class="job-type">💼 Full Time</span>
+                <span class="job-location">📍 Chennai</span>
+            </div>
+            <a href="https://careers.caterpillar.com/en/jobs/r0000340945/digital-tech-support-analyst/?source=LinkedIn" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 17 - Harmonic -->
+        <div class="job-card card-blue" data-category="qa">
+            <div class="job-badge">Harmonic</div>
+            <h3 class="job-title">Associate QA Engineer</h3>
+            <div class="job-details">
+                <span class="job-type">🎯 2024/2025</span>
+                <span class="job-location">📍 Bengaluru</span>
+            </div>
+            <a href="https://egmn.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/Harmonic/job/260044/" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 18 - PwC (Software Development) -->
+        <div class="job-card card-purple" data-category="development">
+            <div class="job-badge">PwC</div>
+            <h3 class="job-title">Associate Software Development</h3>
+            <div class="job-details">
+                <span class="job-type">💻 Development</span>
+                <span class="job-location">📍 Kolkata</span>
+            </div>
+            <a href="https://pwc.wd3.myworkdayjobs.com/Global_Experienced_Careers/job/Kolkata-DN-57/IN-Associate-Software-Developement-Digital-Integration-Advisory-Kolkata_697092WD-1" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 19 - T-Systems -->
+        <div class="job-card card-teal" data-category="frontend">
+            <div class="job-badge">T-Systems</div>
+            <h3 class="job-title">Frontend Developer</h3>
+            <div class="job-details">
+                <span class="job-type">🌐 Frontend</span>
+                <span class="job-location">📍 Bengaluru</span>
+            </div>
+            <a href="https://jobs.smartrecruiters.com/T-SystemsICTIndiaPvtLtd1/744000102556715-frontend-developer?trid=dfdf7fd4-317b-4109-a155-ebd850438983&rsid=f7bdadb1-9f60-4ac2-a2c4-dfd9b69678a6" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 20 - Oodles Technologies -->
+        <div class="job-card card-orange" data-category="consulting">
+            <div class="job-badge">Oodles Technologies</div>
+            <h3 class="job-title">Assistant Consultant</h3>
+            <div class="job-details">
+                <span class="job-type">💼 0-1 Year</span>
+                <span class="job-location">📍 Gurgaon</span>
+            </div>
+            <a href="https://careers.oodles.io/jobs/1189?ref=2456" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+
+        <!-- Job 21 - Emerson (Bonus) -->
+        <div class="job-card card-green" data-category="development">
+            <div class="job-badge">Emerson</div>
+            <h3 class="job-title">Software Engineer</h3>
+            <div class="job-details">
+                <span class="job-type">🏠 Hybrid</span>
+                <span class="job-location">📍 Pune</span>
+            </div>
+            <a href="https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/25030499" target="_blank" rel="noopener" class="apply-btn">
+                Apply Now →
+            </a>
+        </div>
+    </div>
+
+    <!-- No Results Message -->
+    <div class="no-results" style="display: none;">
+        <div class="no-results-content">
+            <span class="no-results-icon">🔍</span>
+            <h3>No Jobs Found</h3>
+            <p>Try selecting a different category or view all jobs</p>
+        </div>
+    </div>
+</div>
+
+<style>
+.jobs-container {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Filter Section Styles */
+.filter-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 0.6s ease-out;
+}
+
+.filter-header h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.filter-btn {
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.filter-btn.active {
+    background: #ffffff;
+    color: #667eea;
+    border-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* No Results Styles */
+.no-results {
+    text-align: center;
+    padding: 60px 20px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.no-results-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.no-results-icon {
+    font-size: 64px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.no-results h3 {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.no-results p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Job Cards Styles */
+.job-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.job-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    animation: slideUp 0.6s ease-out backwards;
+}
+
+.job-card.hidden {
+    display: none;
+}
+
+.job-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    transition: height 0.3s ease;
+}
+
+.card-blue { border: 3px solid #667eea; }
+.card-purple { border: 3px solid #f093fb; }
+.card-green { border: 3px solid #4facfe; }
+.card-orange { border: 3px solid #fa709a; }
+.card-cyan { border: 3px solid #30cfd0; }
+.card-red { border: 3px solid #ff6b6b; }
+.card-pink { border: 3px solid #ff85a2; }
+.card-teal { border: 3px solid #20e3b2; }
+.card-indigo { border: 3px solid #5f72bd; }
+.card-violet { border: 3px solid #9d50bb; }
+.card-sky { border: 3px solid #38bdf8; }
+.card-mint { border: 3px solid #34d399; }
+.card-gold { border: 3px solid #fbbf24; }
+.card-coral { border: 3px solid #fb7185; }
+.card-lavender { border: 3px solid #c084fc; }
+.card-royal { border: 3px solid #4285f4; }
+
+.job-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.job-card:hover::before {
+    height: 100%;
+    opacity: 0.05;
+}
+
+.card-blue::before { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.card-purple::before { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+.card-green::before { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+.card-orange::before { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+.card-cyan::before { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
+.card-red::before { background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%); }
+.card-pink::before { background: linear-gradient(135deg, #ff85a2 0%, #ff5983 100%); }
+.card-teal::before { background: linear-gradient(135deg, #20e3b2 0%, #29ffc6 100%); }
+.card-indigo::before { background: linear-gradient(135deg, #5f72bd 0%, #9b23ea 100%); }
+.card-violet::before { background: linear-gradient(135deg, #9d50bb 0%, #6e48aa 100%); }
+.card-sky::before { background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%); }
+.card-mint::before { background: linear-gradient(135deg, #34d399 0%, #10b981 100%); }
+.card-gold::before { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); }
+.card-coral::before { background: linear-gradient(135deg, #fb7185 0%, #f43f5e 100%); }
+.card-lavender::before { background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%); }
+.card-royal::before { background: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%); }
+
+.job-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.hot-badge {
+    animation: pulse 1.5s ease-in-out infinite, glow 2s ease-in-out infinite;
+}
+
+.card-blue .job-badge { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; }
+.card-purple .job-badge { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: #fff; }
+.card-green .job-badge { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: #fff; }
+.card-orange .job-badge { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: #fff; }
+.card-cyan .job-badge { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); color: #fff; }
+.card-red .job-badge { background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%); color: #fff; }
+.card-pink .job-badge { background: linear-gradient(135deg, #ff85a2 0%, #ff5983 100%); color: #fff; }
+.card-teal .job-badge { background: linear-gradient(135deg, #20e3b2 0%, #29ffc6 100%); color: #fff; }
+.card-indigo .job-badge { background: linear-gradient(135deg, #5f72bd 0%, #9b23ea 100%); color: #fff; }
+.card-violet .job-badge { background: linear-gradient(135deg, #9d50bb 0%, #6e48aa 100%); color: #fff; }
+.card-sky .job-badge { background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%); color: #fff; }
+.card-mint .job-badge { background: linear-gradient(135deg, #34d399 0%, #10b981 100%); color: #fff; }
+.card-gold .job-badge { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: #fff; }
+.card-coral .job-badge { background: linear-gradient(135deg, #fb7185 0%, #f43f5e 100%); color: #fff; }
+.card-lavender .job-badge { background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%); color: #fff; }
+.card-royal .job-badge { background: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%); color: #fff; }
+
+.job-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    line-height: 1.4;
+    min-height: 50px;
+}
+
+.job-details {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.job-type, .job-location {
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+}
+
+.apply-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-blue .apply-btn { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.card-purple .apply-btn { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+.card-green .apply-btn { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+.card-orange .apply-btn { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+.card-cyan .apply-btn { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
+.card-red .apply-btn { background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%); }
+.card-pink .apply-btn { background: linear-gradient(135deg, #ff85a2 0%, #ff5983 100%); }
+.card-teal .apply-btn { background: linear-gradient(135deg, #20e3b2 0%, #29ffc6 100%); }
+.card-indigo .apply-btn { background: linear-gradient(135deg, #5f72bd 0%, #9b23ea 100%); }
+.card-violet .apply-btn { background: linear-gradient(135deg, #9d50bb 0%, #6e48aa 100%); }
+.card-sky .apply-btn { background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%); }
+.card-mint .apply-btn { background: linear-gradient(135deg, #34d399 0%, #10b981 100%); }
+.card-gold .apply-btn { background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); }
+.card-coral .apply-btn { background: linear-gradient(135deg, #fb7185 0%, #f43f5e 100%); }
+.card-lavender .apply-btn { background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%); }
+.card-royal .apply-btn { background: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%); }
+
+.apply-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.apply-btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.apply-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.apply-btn:active {
+    transform: scale(0.98);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); }
+}
+
+.job-card:nth-child(1) { animation-delay: 0.1s; }
+.job-card:nth-child(2) { animation-delay: 0.15s; }
+.job-card:nth-child(3) { animation-delay: 0.2s; }
+.job-card:nth-child(4) { animation-delay: 0.25s; }
+.job-card:nth-child(5) { animation-delay: 0.3s; }
+.job-card:nth-child(6) { animation-delay: 0.35s; }
+.job-card:nth-child(7) { animation-delay: 0.4s; }
+.job-card:nth-child(8) { animation-delay: 0.45s; }
+.job-card:nth-child(9) { animation-delay: 0.5s; }
+.job-card:nth-child(10) { animation-delay: 0.55s; }
+.job-card:nth-child(11) { animation-delay: 0.6s; }
+.job-card:nth-child(12) { animation-delay: 0.65s; }
+.job-card:nth-child(13) { animation-delay: 0.7s; }
+.job-card:nth-child(14) { animation-delay: 0.75s; }
+.job-card:nth-child(15) { animation-delay: 0.8s; }
+.job-card:nth-child(16) { animation-delay: 0.85s; }
+.job-card:nth-child(17) { animation-delay: 0.9s; }
+.job-card:nth-child(18) { animation-delay: 0.95s; }
+.job-card:nth-child(19) { animation-delay: 1.0s; }
+.job-card:nth-child(20) { animation-delay: 1.05s; }
+.job-card:nth-child(21) { animation-delay: 1.1s; }
+
+@media (max-width: 1200px) {
+    .job-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .job-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .filter-buttons {
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .job-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .job-card {
+        padding: 20px;
+    }
+    
+    .filter-section {
+        padding: 20px;
+    }
+    
+    .filter-header h3 {
+        font-size: 20px;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const jobCards = document.querySelectorAll('.job-card');
+    const noResults = document.querySelector('.no-results');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const category = this.getAttribute('data-category');
+            
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Filter jobs
+            let visibleCount = 0;
+            
+            jobCards.forEach(card => {
+                const cardCategories = card.getAttribute('data-category').split(' ');
+                
+                if (category === 'all') {
+                    card.classList.remove('hidden');
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else if (cardCategories.includes(category)) {
+                    card.classList.remove('hidden');
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.classList.add('hidden');
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Show/hide no results message
+            if (visibleCount === 0) {
+                noResults.style.display = 'block';
+            } else {
+                noResults.style.display = 'none';
+            }
+            
+            // Smooth scroll to job cards
+            document.querySelector('.job-cards').scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'start' 
+            });
+        });
+    });
+});
+</script>

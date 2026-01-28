@@ -1,0 +1,446 @@
+
+<style>
+.opportunities-dashboard {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 50px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.dashboard-header h1 {
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.dashboard-header p {
+    color: #f0f0f0;
+    font-size: 1.2em;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeInUp 0.8s ease-out backwards;
+}
+
+.dashboard-card:nth-child(1) { animation-delay: 0.1s; }
+.dashboard-card:nth-child(2) { animation-delay: 0.2s; }
+.dashboard-card:nth-child(3) { animation-delay: 0.3s; }
+.dashboard-card:nth-child(4) { animation-delay: 0.4s; }
+.dashboard-card:nth-child(5) { animation-delay: 0.5s; }
+.dashboard-card:nth-child(6) { animation-delay: 0.6s; }
+
+.dashboard-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+    transition: left 0.5s;
+}
+
+.dashboard-card:hover::before {
+    left: 100%;
+}
+
+.dashboard-card::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #f9ca24, #ff6b6b);
+    border-radius: 20px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-size: 400%;
+    animation: borderGlow 3s linear infinite;
+}
+
+.dashboard-card:hover::after {
+    opacity: 1;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+}
+
+.card-icon {
+    font-size: 4em;
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+
+.dashboard-card:hover .card-icon {
+    transform: rotateY(360deg) scale(1.2);
+}
+
+.card-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    transition: color 0.3s;
+}
+
+.dashboard-card:hover .card-title {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.card-description {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.card-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75em;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+/* Card specific colors */
+.card-internship { border-top: 5px solid #4ecdc4; }
+.card-fulltime { border-top: 5px solid #ff6b6b; }
+.card-referrals { border-top: 5px solid #f9ca24; }
+.card-preparation { border-top: 5px solid #45b7d1; }
+.card-hackathon { border-top: 5px solid #9b59b6; }
+.card-hr { border-top: 5px solid #e74c3c; }
+
+/* Popup Modal Styles */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s;
+}
+
+.popup-content {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 500px;
+    margin: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    animation: popupSlide 0.4s ease-out;
+    position: relative;
+}
+
+.popup-icon {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.popup-title {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.popup-message {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.popup-close {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.popup-close:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes borderGlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popupSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-50px) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-header h1 {
+        font-size: 2em;
+    }
+    
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .dashboard-card {
+        padding: 30px 20px;
+    }
+    
+    .popup-content {
+        padding: 30px 20px;
+    }
+}
+</style>
+
+<div class="opportunities-dashboard">
+    <div class="dashboard-header">
+        <h1>Career Opportunities Portal</h1>
+        <p>Choose your path to success</p>
+    </div>
+    
+    <div class="dashboard-grid">
+        <!-- Internship Card -->
+        <div class="dashboard-card card-internship" onclick="redirectTo('internship')">
+            <div class="card-badge">Popular</div>
+            <div class="card-icon">💼</div>
+            <h2 class="card-title">Internship</h2>
+            <p class="card-description">Explore exciting internship opportunities and gain hands-on experience</p>
+        </div>
+        
+        <!-- Full Time Job Card -->
+        <div class="dashboard-card card-fulltime" onclick="redirectTo('fulltime')">
+            <div class="card-badge">Featured</div>
+            <div class="card-icon">🎯</div>
+            <h2 class="card-title">Full Time Job</h2>
+            <p class="card-description">Find your dream job and kickstart your professional career</p>
+        </div>
+        
+        <!-- Referrals Card -->
+        <div class="dashboard-card card-referrals" onclick="showPopup('referrals')">
+            <div class="card-badge">Hot</div>
+            <div class="card-icon">🤝</div>
+            <h2 class="card-title">ReferralsLink</h2>
+            <p class="card-description">Get referred by industry professionals and boost your chances</p>
+        </div>
+        
+        <!-- Preparation Guide Card -->
+        <div class="dashboard-card card-preparation" onclick="showPopup('preparation')">
+            <div class="card-badge">New</div>
+            <div class="card-icon">📚</div>
+            <h2 class="card-title">Preparation Guide</h2>
+            <p class="card-description">Master your interview skills with comprehensive study materials</p>
+        </div>
+        
+        <!-- Hackathon Card -->
+        <div class="dashboard-card card-hackathon" onclick="showPopup('hackathon')">
+            <div class="card-badge">Trending</div>
+            <div class="card-icon">💻</div>
+            <h2 class="card-title">Hackathon</h2>
+            <p class="card-description">Participate in exciting hackathons and showcase your skills</p>
+        </div>
+        
+        <!-- HR Contact Details Card -->
+        <div class="dashboard-card card-hr" onclick="redirectTo('hr')">
+            <div class="card-badge">Connect</div>
+            <div class="card-icon">📧</div>
+            <h2 class="card-title">Get HR Contact</h2>
+            <p class="card-description">Access HR email addresses and contact details for direct communication</p>
+        </div>
+    </div>
+</div>
+
+<!-- Popup Modal -->
+<div class="popup-overlay" id="popupModal">
+    <div class="popup-content">
+        <div class="popup-icon" id="popupIcon">🔔</div>
+        <h2 class="popup-title" id="popupTitle">Coming Soon!</h2>
+        <p class="popup-message" id="popupMessage">This feature will be updated soon. Thanks for your interest!</p>
+        <button class="popup-close" onclick="closePopup()">Got it!</button>
+    </div>
+</div>
+
+<script>
+// Redirect function
+function redirectTo(type) {
+    if (type === 'internship') {
+        window.location.href = 'https://classworkgpt.com/internship/';
+    } else if (type === 'fulltime') {
+        window.location.href = 'https://classworkgpt.com/job-update-full-time/';
+    } else if (type === 'hr') {
+        window.location.href = 'https://classworkgpt.com/direct-contact/';
+    }
+}
+
+// Show popup function
+function showPopup(type) {
+    const modal = document.getElementById('popupModal');
+    const icon = document.getElementById('popupIcon');
+    const title = document.getElementById('popupTitle');
+    const message = document.getElementById('popupMessage');
+    
+    if (type === 'referrals') {
+        icon.textContent = '🔔';
+        title.textContent = 'Coming Soon!';
+        message.textContent = 'This feature will be updated soon. Thanks for your interest!';
+    } else if (type === 'preparation') {
+        icon.textContent = '📚';
+        title.textContent = 'Not Updated Yet';
+        message.textContent = 'ClassworkGPT has not updated this section yet. Meanwhile, check out our available courses!';
+        
+        // Add redirect button for preparation guide
+        setTimeout(() => {
+            window.location.href = 'https://classworkgpt.com/course/';
+        }, 2500);
+    } else if (type === 'hackathon') {
+        icon.textContent = '💻';
+        title.textContent = 'Coming Soon!';
+        message.textContent = 'ClassworkGPT will update this page soon. Thanks for your interest!';
+    }
+    
+    modal.style.display = 'flex';
+}
+
+// Close popup function
+function closePopup() {
+    const modal = document.getElementById('popupModal');
+    modal.style.display = 'none';
+}
+
+// Close popup when clicking outside
+document.getElementById('popupModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closePopup();
+    }
+});
+
+// Add ripple effect
+document.querySelectorAll('.dashboard-card').forEach(card => {
+    card.addEventListener('click', function(e) {
+        const ripple = document.createElement('div');
+        const rect = this.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        ripple.style.cssText = `
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.6);
+            width: 100px;
+            height: 100px;
+            left: ${x}px;
+            top: ${y}px;
+            margin-left: -50px;
+            margin-top: -50px;
+            animation: ripple 0.6s;
+            pointer-events: none;
+        `;
+        
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes ripple {
+                from {
+                    opacity: 1;
+                    transform: scale(0);
+                }
+                to {
+                    opacity: 0;
+                    transform: scale(10);
+                }
+            }
+        `;
+        if (!document.querySelector('style[data-ripple]')) {
+            style.setAttribute('data-ripple', 'true');
+            document.head.appendChild(style);
+        }
+        
+        this.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 600);
+    });
+});
+</script>
